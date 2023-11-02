@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
     $(".youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
         disableOn: 700,
         type: "iframe",
@@ -7,7 +7,7 @@ $(document).ready(function () {
         preloader: false,
         fixedContentPos: false,
     });
-});
+
 
 AOS.init({
     once: true,
