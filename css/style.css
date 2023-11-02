@@ -1189,16 +1189,6 @@ header {
   height: 31px;
 }
 
-.section-kurs::before {
-  background-image: url("/assets/zo.png");
-  background-repeat: no-repeat;
-  background-size: 297px 343px;
-  background-position: top 146px left 149px;
-  display: block;
-  position: fixed;
-  top: 50px;
-}
-
 .section-kurs {
   background: #f3f3f3;
 }
@@ -1217,11 +1207,8 @@ header {
   max-width: 297px;
   height: 343px;
   top: 300px;
-  bottom: 100px;
   left: 149px;
   position: fixed;
-  display: block;
-  z-index: 3;
 }
 .section-kurs__wrapper-container-title {
   margin: 0 49px 0 0;
@@ -1998,7 +1985,7 @@ img.mfp-img {
   transform: translate(-50%, -50%);
 }
 
-.videoe {
+.videoc {
   background: url("/assets/ustoz3.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -2011,7 +1998,7 @@ img.mfp-img {
   margin-right: 30px;
 }
 
-.videoe .player {
+.videoc .player {
   width: 100px;
   height: 100px;
   background-color: rgba(237, 228, 233, 0.15);
@@ -2023,7 +2010,7 @@ img.mfp-img {
   transform: translate(-50%, -50%);
 }
 
-.videoe .player-overlay {
+.videoc .player-overlay {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -2035,14 +2022,14 @@ img.mfp-img {
   transform: translate(-50%, -50%);
 }
 
-.videoe .player-overlay svg {
+.videoc .player-overlay svg {
   position: absolute;
   top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
 }
 
-.videof {
+.videod {
   background: url("/assets/ustoz4.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -2053,6 +2040,49 @@ img.mfp-img {
   overflow: hidden;
   position: relative;
   margin-right: 30px;
+}
+
+.videod .player {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(237, 228, 233, 0.15);
+  box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.videod .player-overlay {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(240, 227, 234, 0.76);
+  box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  transform: translate(-50%, -50%);
+}
+
+.videod .player-overlay svg {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.videof {
+  background: url("/assets/ustoz5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 226px;
+  width: 380px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
 .videof .player {
@@ -2080,49 +2110,6 @@ img.mfp-img {
 }
 
 .videof .player-overlay svg {
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-}
-
-.videog {
-  background: url("/assets/ustoz5.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 226px;
-  width: 380px;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-}
-
-.videog .player {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(237, 228, 233, 0.15);
-  box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
-  position: relative;
-  top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-}
-
-.videog .player-overlay {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: rgba(240, 227, 234, 0.76);
-  box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
-  position: absolute;
-  top: 50%;
-  left: 150px;
-  transform: translate(-50%, -50%);
-}
-
-.videog .player-overlay svg {
   position: absolute;
   top: 50%;
   left: 55%;

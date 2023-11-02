@@ -13,10 +13,6 @@ AOS.init({
     once: true,
 });
 
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});
-
 const accordion = document.getElementsByClassName("contentBx");
 
 for (i = 0; i < accordion.length; i++) {
