@@ -550,7 +550,6 @@ header {
         max-width: 517px;
         height: 549px;
         border-radius: 10px;
-       
     }
 
     &__wrapper-container-img2 {
@@ -1316,7 +1315,6 @@ header {
         top: 300px;
         left: 149px;
         position: fixed;
-        
     }
     &__wrapper-container-title {
         margin: 0 49px 0 0;
@@ -1929,19 +1927,20 @@ img.mfp-img {
 .accordion .contentBx {
     border-radius: 16px;
     background-color: #ffffff;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-    padding: 12px 12px 16px 30px;
+    box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.1);
+    // padding: 12px 12px 16px 3px;
     margin-bottom: 12px;
 }
 .accordion .contentBx .label {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     color: #000;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px;
     letter-spacing: 0.18px;
     align-items: center;
     padding: 12px 30px;
@@ -1952,12 +1951,12 @@ img.mfp-img {
     height: 50px;
     border: 0;
     border-radius: 10px;
-    background: #fff;
+    background: hsl(0, 15%, 99%);
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
 }
-
 .contentBx .content {
     padding-top: 0;
+    // border-radius: 10px;
 }
 
 .accordion .contentBx .content {
@@ -1973,16 +1972,20 @@ img.mfp-img {
 }
 .accordion .contentBx.active .content {
     height: auto;
-    padding: 10px;
+    padding: 10px 0 0 0;
 }
 
 .accordion .contentBx .content p {
+    width: 100%;
+    max-width: 625px;
     margin-top: 0;
-    margin-left: 22px;
+    margin-left: 0px;
     font-size: 18px;
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
+    border-radius: 16px;
+    
 }
 
 .video {
@@ -2325,7 +2328,6 @@ img.mfp-img {
             max-width: 500px;
             height: 535px;
             border-radius: 10px;
-            
         }
 
         &__wrapper-container-img2 {
@@ -3137,7 +3139,6 @@ img.mfp-img {
             max-width: 460px;
             height: 500px;
             border-radius: 10px;
-         
         }
 
         &__wrapper-container-img2 {
@@ -3392,8 +3393,8 @@ img.mfp-img {
             background-size: 65px 84px, 65px 67px, 78px 80px, 59px 51px,
                 65px 67px, 233px 254px, 241px 167px, 521px 269px, 65px 84px;
             background-position: top 68px left 56px, top 22px left 613px,
-                top 54px left 1254px, top 474px left 726px, top 609px left 159px,
-                top 270px left 465px, top 540px left 320px, bottom right,
+                top 54px left 1150px, top 474px left 726px, top 609px left 159px,
+                top 270px left 430px, top 540px left 320px, bottom right,
                 top 538px left 1200px;
             background-image: url("/assets/yellow-yulduz.png"),
                 url("/assets/img4.png"), url("/assets/img-3.png"),
@@ -3403,7 +3404,7 @@ img.mfp-img {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 71px 60px 47px 60px;
+            padding: 71px 50px 47px 50px;
             margin: 80px -20px 0;
         }
         &__text-arab {
@@ -3489,7 +3490,8 @@ img.mfp-img {
             width: 100%;
             max-width: 612px;
 
-            padding-left: 60px;
+            padding-left: 30px;
+            padding-right: 0px;
         }
         &__container2-con {
             padding-left: 100;
@@ -3507,7 +3509,7 @@ img.mfp-img {
                 position: absolute;
                 top: 10px;
                 left: 20px;
-                color: var(--White, #fff);
+                color: #fff;
                 z-index: 2;
                 font-family: Roboto;
                 font-size: 12px;
@@ -3589,12 +3591,16 @@ img.mfp-img {
                 line-height: 141.5%;
             }
 
+            &__wrapper-img-container {
+                padding-left: 20px;
+            }
+
             &__wrapper-img {
                 max-width: 100%;
                 width: 395px;
-                height: 471px;
+                height: 420px;
                 border-radius: 10px;
-                margin-left: -30px;
+
                 margin-top: -70px;
                 width: 100%;
             }
@@ -3662,6 +3668,940 @@ img.mfp-img {
                 background-color: #ff9c09;
                 border: 0;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1305px) {
+    .video-section {
+        background-repeat: no-repeat;
+        background-size: 2440px 1114px;
+        background-position: top 0 bottom 0;
+        background-image: url("/assets/bg.png");
+        padding: 109px 10px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__title {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 30px;
+            padding-top: 109px;
+            color: #333333;
+            text-align: center;
+            font-size: 44px;
+            font-family: Urbanist;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 141.5%;
+        }
+
+        &__works {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1212px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .videoa {
+            background: url("/assets/aka.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 347px;
+            width: 586px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        .videoa .player {
+            width: 185px;
+            height: 185px;
+            background-color: rgba(237, 228, 233, 0.15);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 380px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videoa .player-overlay {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(240, 227, 234, 0.76);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50%;
+            left: -80px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videoa .player-overlay svg {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .videob {
+            background: url("/assets/ustoz2.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 347px;
+            width: 586px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .videob .player {
+            width: 185px;
+            height: 185px;
+            background-color: rgba(237, 228, 233, 0.15);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 10%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videob .player-overlay {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(240, 227, 234, 0.76);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50%;
+            left: 235px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videob .player-overlay svg {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .videoc {
+            background: url("/assets/ustoz3.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 226px;
+            width: 380px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 30px;
+        }
+
+        .videoc .player {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(237, 228, 233, 0.15);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 10%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videoc .player-overlay {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgba(240, 227, 234, 0.76);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50%;
+            left: 155px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videoc .player-overlay svg {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .videod {
+            background: url("/assets/ustoz4.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 226px;
+            width: 380px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 30px;
+        }
+
+        .videod .player {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(237, 228, 233, 0.15);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 10%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videod .player-overlay {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgba(240, 227, 234, 0.76);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50%;
+            left: 150px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videod .player-overlay svg {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .videof {
+            background: url("/assets/ustoz5.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 226px;
+            width: 380px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .videof .player {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(237, 228, 233, 0.15);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 10%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videof .player-overlay {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgba(240, 227, 234, 0.76);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50%;
+            left: 150px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videof .player-overlay svg {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+@media only screen and (max-width: 1265px) {
+    .video-section {
+        background-repeat: no-repeat;
+        background-size: 2440px 1114px;
+        background-position: top 0 bottom 0;
+        background-image: url("/assets/bg.png");
+        padding: 109px 10px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__title {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 30px;
+            padding-top: 109px;
+            color: #333333;
+            text-align: center;
+            font-size: 44px;
+            font-family: Urbanist;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 141.5%;
+        }
+
+        &__works {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1212px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .videoa {
+            background: url("/assets/aka.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 310px;
+            width: 540px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 30px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+
+        .videoa .player {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(237, 228, 233, 0.15);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 350px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videoa .player-overlay {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(240, 227, 234, 0.76);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50%;
+            left: -80px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videoa .player-overlay svg {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .videob {
+            background: url("/assets/ustoz2.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 310px;
+            width: 540px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .videob .player {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(237, 228, 233, 0.15);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 28px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videob .player-overlay {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(240, 227, 234, 0.76);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50%;
+            left: 235px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videob .player-overlay svg {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .videoc {
+            background: url("/assets/ustoz3.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            width: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .videoc .player {
+            width: 90px;
+            height: 90px;
+            background-color: rgba(237, 228, 233, 0.15);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 10%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videoc .player-overlay {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: rgba(240, 227, 234, 0.76);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50%;
+            left: 148px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videoc .player-overlay svg {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .videod {
+            background: url("/assets/ustoz4.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            width: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 30px;
+        }
+
+        .videod .player {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(237, 228, 233, 0.15);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 10%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videod .player-overlay {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: rgba(240, 227, 234, 0.76);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50%;
+            left: 145px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videod .player-overlay svg {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .videof {
+            background: url("/assets/ustoz5.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            width: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .videof .player {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(237, 228, 233, 0.15);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+            left: 10%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videof .player-overlay {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: rgba(240, 227, 234, 0.76);
+            -webkit-box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50%;
+            left: 140px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .videof .player-overlay svg {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+    .video-section {
+        background-repeat: no-repeat;
+        background-size: 2440px 1114px;
+        background-position: top 0 bottom 0;
+        background-image: url("/assets/bg.png");
+        padding: 109px 10px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__title {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 30px;
+            padding-top: 109px;
+            color: #333333;
+            text-align: center;
+            font-size: 44px;
+            font-family: Urbanist;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 141.5%;
+        }
+
+        &__works {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1212px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__video0 {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 540px;
+            height: 300px;
+            margin: 0 30px 30px 0;
+        }
+        &__video1 {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 586px;
+            height: 348px;
+            margin: 0 0 30px 0px;
+        }
+        &__video2 {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 381px;
+            height: 226px;
+        }
+        &__video3 {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 381px;
+            height: 226px;
+            margin: 0 30px;
+        }
+        &__video4 {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 381px;
+            height: 226px;
+        }
+    }
+}
+@media only screen and (max-width: 1205px) {
+    .main-header {
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+
+        &__logo-oq {
+            width: 100%;
+            max-width: 95px;
+            height: 50px;
+            display: none;
+        }
+
+        &__tel {
+            display: none;
+        }
+
+        &__menyu {
+            display: none;
+        }
+
+        &__wrapper {
+            margin: 0 auto;
+            padding: 8px 30px;
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__logo {
+            width: 100%;
+            max-width: 139px;
+            height: 64.394px;
+        }
+        &__nav {
+            width: 100%;
+            max-width: 1076px;
+            margin-left: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: Urbanist;
+        }
+        &__list {
+            margin: 0 40px 0 0;
+            display: flex;
+            align-items: center;
+        }
+        &__list-link {
+            color: #000;
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        &__item {
+            margin-right: 20px;
+            font-family: Urbanist;
+            font-weight: 500;
+        }
+        &__item1 {
+            margin-right: 0;
+        }
+
+        &__button:hover {
+            border: 2px solid #207b3e;
+            background-color: #f3f3f3;
+            transition: all 0.5s ease;
+            color: #207b3e;
+        }
+
+        &__button {
+            width: 100%;
+            max-width: 170px;
+            transition: all 0.5s ease;
+            padding: 11px 20px;
+            border: 2px solid #207b3e;
+            background-color: #207b3e;
+            color: #fff;
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border-radius: 10px;
+            border: 0;
+        }
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .main-header {
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+
+        &__logo-oq {
+            width: 100%;
+            max-width: 95px;
+            height: 50px;
+            display: none;
+        }
+
+        &__tel {
+            display: none;
+        }
+
+        &__menyu {
+            display: none;
+        }
+
+        &__wrapper {
+            margin: 0 auto;
+            padding: 8px 20px;
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__logo {
+            width: 100%;
+            max-width: 120px;
+            height: 55.394px;
+        }
+        &__nav {
+            width: 100%;
+            max-width: 1076px;
+            margin-left: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: Urbanist;
+        }
+        &__list {
+            margin: 0 20px 0 0;
+            display: flex;
+            align-items: center;
+        }
+        &__list-link {
+            color: #000;
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        &__item {
+            margin-right: 20px;
+            font-family: Urbanist;
+            font-weight: 500;
+        }
+        &__item1 {
+            margin-right: 0;
+        }
+
+        &__button:hover {
+            border: 2px solid #207b3e;
+            background-color: #f3f3f3;
+            transition: all 0.5s ease;
+            color: #207b3e;
+        }
+
+        &__button {
+            width: 100%;
+            max-width: 170px;
+            transition: all 0.5s ease;
+            padding: 11px 20px;
+            border: 2px solid #207b3e;
+            background-color: #207b3e;
+            color: #fff;
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border-radius: 10px;
+            border: 0;
+        }
+    }
+}
+@media only screen and (max-width: 1070px) {
+    .main-header {
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+
+        &__logo-oq {
+            width: 100%;
+            max-width: 95px;
+            height: 50px;
+            display: none;
+        }
+
+        &__tel {
+            display: none;
+        }
+
+        &__menyu {
+            display: none;
+        }
+
+        &__wrapper {
+            margin: 0 auto;
+            padding: 8px 20px;
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__logo {
+            width: 100%;
+            max-width: 120px;
+            height: 55.394px;
+        }
+        &__nav {
+            width: 100%;
+            max-width: 1076px;
+            margin-left: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: Urbanist;
+        }
+        &__list {
+            margin: 0 20px 0 0;
+            display: flex;
+            align-items: center;
+        }
+        &__list-link {
+            color: #000;
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        &__item {
+            margin-right: 20px;
+            font-family: Urbanist;
+            font-weight: 500;
+        }
+        &__item1 {
+            margin-right: 0;
+        }
+
+        &__button:hover {
+            border: 2px solid #207b3e;
+            background-color: #f3f3f3;
+            transition: all 0.5s ease;
+            color: #207b3e;
+        }
+
+        &__button {
+            width: 100%;
+            max-width: 170px;
+            transition: all 0.5s ease;
+            padding: 11px 20px;
+            border: 2px solid #207b3e;
+            background-color: #207b3e;
+            color: #fff;
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border-radius: 10px;
+            border: 0;
         }
     }
 }
