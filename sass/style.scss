@@ -1945,6 +1945,10 @@ img.mfp-img {
     align-items: center;
     padding: 12px 30px;
 }
+.label-content {
+    // display: flex;
+    // flex-direction: column;
+}
 
 .contentBxbutton {
     width: 50px;
@@ -1953,13 +1957,24 @@ img.mfp-img {
     border-radius: 10px;
     background: hsl(0, 15%, 99%);
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+    margin-left: 80px;
 }
+// .contentBxbutton:nth-child(15) {
+//     width: 50px;
+//     height: 50px;
+//     border: 0;
+//     border-radius: 10px;
+//     background: hsl(0, 15%, 99%);
+//     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+//     margin-left: 0px;
+// }
 .contentBx .content {
     padding-top: 0;
-    // border-radius: 10px;
+    border-radius: 16px;
 }
 
 .accordion .contentBx .content {
+    width: 600px;
     position: relative;
     background: #fff;
     height: 0;
@@ -1972,20 +1987,28 @@ img.mfp-img {
 }
 .accordion .contentBx.active .content {
     height: auto;
-    padding: 10px 0 0 0;
+    padding: 0px 0 0 0;
 }
 
 .accordion .contentBx .content p {
     width: 100%;
-    max-width: 625px;
-    margin-top: 0;
-    margin-left: 0px;
-    font-size: 18px;
-    font-family: Inter;
+    max-width: 500px;
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-family: urbanist;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     border-radius: 16px;
-    
+    margin-left: 32px;
+}
+.contentBX-imtihon {
+    color: #03a959;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 141.5%;
+    text-transform: uppercase;
 }
 
 .video {
@@ -2935,7 +2958,7 @@ img.mfp-img {
             max-width: 612px;
         }
         &__container2-con {
-            padding-left: 60;
+            padding-left: 0;
             &__card {
                 margin: 0 20px 20px 50px;
                 position: relative;
@@ -4259,73 +4282,289 @@ img.mfp-img {
             transform: translate(-50%, -50%);
         }
     }
-    .video-section {
-        background-repeat: no-repeat;
-        background-size: 2440px 1114px;
-        background-position: top 0 bottom 0;
-        background-image: url("/assets/bg.png");
-        padding: 109px 10px;
+    .hero-section {
+        background: #f3f3f3;
 
         &__wrapper {
+            background-repeat: no-repeat;
+            background-size: 65px 84px, 65px 67px, 78px 80px, 59px 51px,
+                65px 67px, 233px 254px, 241px 167px, 521px 269px, 65px 84px;
+            background-position: top 68px left 56px, top 22px left 613px,
+                top 54px left 1150px, top 474px left 726px, top 609px left 159px,
+                top 270px left 430px, top 540px left 320px, bottom right,
+                top 538px left 1200px;
+            background-image: url("/assets/yellow-yulduz.png"),
+                url("/assets/img4.png"), url("/assets/img-3.png"),
+                url("/assets/img6.png"), url("/assets/img01.png"),
+                url("/assets/ka.png"), url("/assets/kitob.png"),
+                url("/assets/naqsh.png"), url("/assets/yellow-yulduz.png");
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            padding: 71px 30px 47px 30px;
+            margin: 80px -20px 0;
         }
-
-        &__title {
+        &__text-arab {
+            margin-left: 6px;
+            color: #207b3e;
+            font-family: Sarabun;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 141.5%;
+        }
+        &__wrapper-container-text-arab {
+            margin: 0px;
+            padding: 0;
             width: 100%;
-            max-width: 500px;
-            margin: 0 auto 30px;
-            padding-top: 109px;
-            color: #333333;
-            text-align: center;
-            font-size: 44px;
+            max-width: 450px;
+            color: #ff9c08;
+            font-family: Sarabun;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 141.5%;
+        }
+        &__wrapper-container-title {
+            margin: 28px 10px 39px 0;
+            padding: 0;
+            width: 100%;
+            max-width: 505px;
+            color: #207b3e;
             font-family: Urbanist;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 141.5%;
+        }
+        &__wrapper-container-title-span {
+            width: 100%;
+            max-width: 530px;
+            color: #333;
+            font-family: Urbanist;
+            font-size: 36px;
             font-style: normal;
             font-weight: 700;
             line-height: 141.5%;
         }
 
-        &__works {
-            margin: 0 auto;
-            width: 100%;
-            max-width: 1212px;
-            display: flex;
-            flex-wrap: wrap;
+        &__wrapper-container-button:hover {
+            border: 2px solid #207b3e;
+            background-color: #f3f3f3;
+            background-repeat: no-repeat;
+            background-size: 32px;
+            background-position: center right 25px;
+            background-image: url("/assets/indicator.svg");
+            transition: all 0.5s ease;
+            color: #207b3e;
         }
 
-        &__video0 {
+        &__wrapper-container-button {
+            transition: all 0.5s ease;
+            padding: 11px 67px 11px 25px;
+            border: 2px solid #207b3e;
+            background-color: #207b3e;
+            margin: 0;
+            color: #fff;
+            font-family: Urbanist;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            text-align: center;
             border-radius: 10px;
-            width: 100%;
-            max-width: 540px;
-            height: 300px;
-            margin: 0 30px 30px 0;
+            background-repeat: no-repeat;
+            background-size: 32px;
+            background-position: center right 25px;
+            background-image: url("/assets/button\ img1.png");
         }
-        &__video1 {
-            border-radius: 10px;
+
+        &__wrapper-container2 {
+            display: flex;
+            align-items: center;
             width: 100%;
-            max-width: 586px;
-            height: 348px;
-            margin: 0 0 30px 0px;
+            max-width: 612px;
+
+            padding-left: 30px;
+            padding-right: 0px;
         }
-        &__video2 {
-            border-radius: 10px;
-            width: 100%;
-            max-width: 381px;
-            height: 226px;
-        }
-        &__video3 {
-            border-radius: 10px;
-            width: 100%;
-            max-width: 381px;
-            height: 226px;
-            margin: 0 30px;
-        }
-        &__video4 {
-            border-radius: 10px;
-            width: 100%;
-            max-width: 381px;
-            height: 226px;
+        &__container2-con {
+            padding-left: 100;
+            &__card {
+                margin: 0 20px 20px 50px;
+                position: relative;
+                width: 100%;
+                max-width: 230px;
+                height: 330px;
+                border-radius: 10px;
+                background: var(--White, #fff);
+                box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+            }
+            &__card-img-text {
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                color: #fff;
+                z-index: 2;
+                font-family: Roboto;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                width: 59px;
+                height: 24px;
+                padding: 13px 27px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                background: #207b3e;
+            }
+            &__card-img {
+                margin: 16px 14px 18px 13px;
+                width: 100%;
+                max-width: 220px;
+                height: 140px;
+                flex-shrink: 0;
+                border-radius: 6px;
+            }
+            &__bookmark-container {
+                display: flex;
+            }
+            &__filetext {
+                margin: 0px 2px 12px 12px;
+                width: 100%;
+                max-width: 20px;
+                height: 20px;
+            }
+            &__filetext-text {
+                margin: 0px 14px 14px 0px;
+                color: var(--Gray-3, #828282);
+                font-family: Roboto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: -0.14px;
+            }
+            &__bookmark {
+                margin: 0px 2px 14px 0px;
+                width: 100%;
+                max-width: 20px;
+                height: 20px;
+            }
+            &__bookmark-text {
+                margin: 0px 69px 14px 0px;
+                color: var(--Gray-3, #828282);
+                font-family: Roboto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: -0.14px;
+            }
+            &__card-title {
+                margin: 0px 60px 12px 12px;
+                width: 100%;
+                max-width: 195px;
+                color: var(--Black, #000);
+                font-family: Urbanist;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 141.5%;
+            }
+            &__card-text {
+                margin: 0px 41px 15px 12px;
+                width: 100%;
+                max-width: 214px;
+                color: #828282;
+                font-family: Roboto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 141.5%;
+            }
+
+            &__wrapper-img-container {
+                padding-left: 20px;
+            }
+
+            &__wrapper-img {
+                max-width: 100%;
+                width: 395px;
+                height: 420px;
+                border-radius: 10px;
+
+                margin-top: -70px;
+                width: 100%;
+            }
+
+            &__card-demo {
+                margin: 0 20px 0 90px;
+                padding: 12px 19px 15px;
+                width: 100%;
+                max-width: 177px;
+                height: 199px;
+                border-radius: 10px;
+                background: var(--White, #fff);
+                box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+            }
+            &__card-demo-img {
+                width: 100%;
+                max-width: 55px;
+                height: 55px;
+            }
+            &__card-demo-title {
+                width: 100%;
+                max-width: 98px;
+                margin: 10px 0 4px;
+                color: var(--Black, #000);
+                font-family: Urbanist;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 141.5%;
+            }
+            &__card-demo-text {
+                margin: 0 0 10px;
+                color: #828282;
+                font-family: Roboto, sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            &__card-demo-button:hover {
+                border: 2px solid #ff9c09;
+                background-color: #f9cf91;
+                background-image: url("../assets/icons/indicator.svg");
+                transition: all 0.5s ease;
+            }
+            &__card-demo-button {
+                transition: all 0.5s ease;
+                width: 100%;
+                max-width: 139px;
+                height: 48px;
+                margin: 0px;
+                color: #fff;
+                font-family: Urbanist;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                display: inline-flex;
+                padding: 11px 25px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 10px;
+                border: 2px solid #ff9c09;
+                background-color: #ff9c09;
+                border: 0;
+            }
         }
     }
 }
@@ -4537,7 +4776,7 @@ img.mfp-img {
 
         &__wrapper {
             margin: 0 auto;
-            padding: 8px 20px;
+            padding: 8px 12px;
             width: 100%;
             max-width: 1440px;
             display: flex;
@@ -4552,27 +4791,27 @@ img.mfp-img {
         &__nav {
             width: 100%;
             max-width: 1076px;
-            margin-left: 45px;
+            margin-left: 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-family: Urbanist;
         }
         &__list {
-            margin: 0 20px 0 0;
+            margin: 0 15px 0 0;
             display: flex;
             align-items: center;
         }
         &__list-link {
             color: #000;
             font-family: Urbanist;
-            font-size: 16px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
         }
         &__item {
-            margin-right: 20px;
+            margin-right: 10px;
             font-family: Urbanist;
             font-weight: 500;
         }
@@ -4589,14 +4828,14 @@ img.mfp-img {
 
         &__button {
             width: 100%;
-            max-width: 170px;
+            max-width: 140px;
             transition: all 0.5s ease;
-            padding: 11px 20px;
+            padding: 11px 11px;
             border: 2px solid #207b3e;
             background-color: #207b3e;
             color: #fff;
             font-family: Urbanist;
-            font-size: 16px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
