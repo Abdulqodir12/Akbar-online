@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        
+
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -15,7 +15,7 @@
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
-         <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style.css" />
         <style>
             body {
                 position: relative;
@@ -38,10 +38,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
+                padding: 52px 0 52px 0px;
             }
 
             .swiper-slide:nth-child(1) {
                 padding-right: 55px;
+                padding-left: 50px;
             }
 
             .swiper-slide img {
@@ -79,7 +81,7 @@
                                 class="main-header__logo-oq"
                                 src="./assets/akbar-logo-oq.svg"
                                 width="139"
-                                height="64.394"
+                                height="64"
                                 alt="logo" />
 
                             <nav class="main-header__nav">
@@ -135,21 +137,65 @@
                                     </li>
                                 </ul>
 
-                                <a
-                                    class="main-header__tel"
-                                    href="tel:+998-33-391-19-19">
-                                    +998 (95) 193-31-93</a
-                                >
-                                <button class="main-header__button">
-                                    Ro’yxatdan o’tish
-                                </button>
-                                <img
-                                    class="main-header__menyu"
-                                    src="./assets/header-menyu.png"
-                                    width="24"
-                                    height="24"
-                                    alt="menyu" />
+                                <div class="main-header__block">
+                                    <a
+                                        class="main-header__tel"
+                                        href="tel:+998-33-391-19-19">
+                                        +998 (95) 193-31-93</a
+                                    >
+                                    <button
+                                        class="main-header__button"
+                                        type="button">
+                                        <a
+                                            href="https://forms.gle/SaFzBQmB6YwZEht66"
+                                            >Ro’yxatdan o’tish</a
+                                        >
+                                    </button>
+                                </div>
                             </nav>
+
+                            <div class="menuburger">
+                                <!--    Made by Erik Terwan    -->
+                                <!--   24th of November 2015   -->
+                                <!--        MIT License        -->
+                                <nav role="navigation">
+                                    <div id="menuToggle">
+                                        <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+                                        <input type="checkbox" />
+
+                                        <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+
+                                        <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+                                        <ul id="menu">
+                                            <a href="#"
+                                                ><li>Biz haqimizda</li></a
+                                            >
+                                            <a href="#"><li>Kurs haqida</li></a>
+                                            <a href="#"><li>Afzalliklar</li></a>
+                                            <a href="#"><li>Mundarija</li></a>
+                                            <a><li>Narxlar</li></a>
+                                            <a href="#"
+                                                ><li>Kursdan so’ng</li></a
+                                            >
+                                            <a href="#"><li>Aloqa</li></a>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,16 +230,20 @@
                                 <span
                                     class="hero-section__wrapper-container-title-span2">
                                     Arab tilini o’rganinglar
+                                    <span class="hero-section__span-span"
+                                        >, albatta
+                                    </span>
                                 </span>
 
-                                , albatta <br />
                                 u aqlni mustahkamlaydi va muruvatni ziyoda
                                 qiladi.
                             </h2>
 
                             <button
                                 class="hero-section__wrapper-container-button">
-                                Ro’yxatdan o’tish
+                                <a href="https://forms.gle/SaFzBQmB6YwZEht66"
+                                    >Ro’yxatdan o’tish</a
+                                >
                             </button>
                         </div>
                         <div class="hero-section__wrapper-container2">
@@ -252,7 +302,11 @@
                                     </p>
                                     <button
                                         class="hero-section__card-demo-button">
-                                        Yozilish
+                                        <a
+                                            href="https://forms.gle/SaFzBQmB6YwZEht66"
+                                            >Yozilish</a
+                                        >
+
                                         <img
                                             class="hero-section__card-demo-button-img"
                                             src="assets/button img1.png"
@@ -424,63 +478,69 @@
 
                                 <button
                                     class="main-section__wrapper-container2-button">
-                                    Batafsil o’qish
+                                    <a
+                                        href="https://forms.gle/SaFzBQmB6YwZEht66"
+                                        >Batafsil o’qish</a
+                                    >
                                 </button>
                             </div>
                         </div>
                         <div class="main-section__none-content2">
                             <div
-                                    class="main-section__wrapper-container2-advantage1">
-                                    <div class="Bookmar-con-1">
-                                        <img
-                                            class="main-section__wrapper-container2-advantage1-img"
-                                            src="assets/cap.png"
-                                            width="32"
-                                            height="32"
-                                            alt="rasm" />
-                                    </div>
-
-                                    <div>
-                                        <h3
-                                            class="main-section__wrapper-container2-advantage1-title">
-                                            Advantage 1
-                                        </h3>
-
-                                        <p
-                                            class="main-section__wrapper-container2-advantage1-text">
-                                            O'quvchida tilga bo'lgan qiziqishni
-                                            uyg'ota oladigan o'qituvchi
-                                        </p>
-                                    </div>
+                                class="main-section__wrapper-container2-advantage1">
+                                <div class="Bookmar-con-1">
+                                    <img
+                                        class="main-section__wrapper-container2-advantage1-img"
+                                        src="assets/cap.png"
+                                        width="32"
+                                        height="32"
+                                        alt="rasm" />
                                 </div>
-                                <div
-                                    class="main-section__wrapper-container2-advantage1">
-                                    <div class="Bookmar-con-2">
-                                        <img
-                                            class="main-section__wrapper-container2-advantage2-img"
-                                            src="assets/BookBookmark.png"
-                                            width="32"
-                                            height="32"
-                                            alt="rasm" />
-                                    </div>
 
-                                    <div>
-                                        <h3
-                                            class="main-section__wrapper-container2-advantage2-title">
-                                            Advantage 2
-                                        </h3>
+                                <div>
+                                    <h3
+                                        class="main-section__wrapper-container2-advantage1-title">
+                                        Advantage 1
+                                    </h3>
 
-                                        <p
-                                            class="main-section__wrapper-container2-advantage2-text">
-                                            Darslarga talabchanlik, masuliyat va
-                                            jiddu-jahd bilan zamonaviy yondashuv
-                                        </p>
-                                    </div>
+                                    <p
+                                        class="main-section__wrapper-container2-advantage1-text">
+                                        O'quvchida tilga bo'lgan qiziqishni
+                                        uyg'ota oladigan o'qituvchi
+                                    </p>
                                 </div>
+                            </div>
+                            <div
+                                class="main-section__wrapper-container2-advantage1">
+                                <div class="Bookmar-con-2">
+                                    <img
+                                        class="main-section__wrapper-container2-advantage2-img"
+                                        src="assets/BookBookmark.png"
+                                        width="32"
+                                        height="32"
+                                        alt="rasm" />
+                                </div>
+
+                                <div class="advantage2-div">
+                                    <h3
+                                        class="main-section__wrapper-container2-advantage2-title">
+                                        Advantage 2
+                                    </h3>
+
+                                    <p
+                                        class="main-section__wrapper-container2-advantage2-text2-1">
+                                        Darslarga talabchanlik, masuliyat va
+                                        jiddu-jahd bilan zamonaviy yondashuv
+                                    </p>
+                                </div>
+                            </div>
 
                             <button
+                                type="button"
                                 class="main-section__wrapper-container2-button1-2">
-                                Batafsil o’qish
+                                <a href="https://forms.gle/SaFzBQmB6YwZEht66"
+                                    >Batafsil o’qish
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -498,7 +558,7 @@
                                 data-aos="fade-up"
                                 data-aos-duration="1500">
                                 <a
-                                    href="https://www.youtube.com/watch?v=icuy_hLuMKQ"
+                                    href="https://www.youtube.com/watch?v=Fed6w5jK5vM"
                                     class="player youtube">
                                     <span class="player-overlay">
                                         <svg
@@ -528,29 +588,34 @@
                 data-aos-duration="400">
                 <div class="about-teacher">
                     <div class="container">
-                        <div class="about-teacher__contact">
-                            <div class="about-teacher__contact-one">
-                                <p class="about-teacher__contact-text">
-                                    Savollaringiz bormi?
-                                </p>
-                                <h3 class="about-teacher__contact-title">
-                                    Bizga aloqaga chiqing!
-                                </h3>
-                            </div>
-                            <div class="about-teacher__contact-two">
-                                <button
-                                    class="about-teacher__contact-btn"
-                                    type="button">
-                                    <a href="#">Ro’yxatdan o’ting</a>
-                                </button>
-                                <p class="about-teacher__contact-desc">
-                                    YOKI QO’NG’IROQ QILING
-                                </p>
-                                <a
-                                    class="about-teacher__contact-tel"
-                                    href="tel:+998-33-391-19-19">
-                                    +998 (95) 193-31-93
-                                </a>
+                        <div class="about-teacher__child">
+                            <div class="about-teacher__contact">
+                                <div class="about-teacher__contact-one">
+                                    <p class="about-teacher__contact-text">
+                                        Savollaringiz bormi?
+                                    </p>
+                                    <h3 class="about-teacher__contact-title">
+                                        Bizga aloqaga chiqing!
+                                    </h3>
+                                </div>
+                                <div class="about-teacher__contact-two">
+                                    <button
+                                        class="about-teacher__contact-btn"
+                                        type="button">
+                                        <a
+                                            href="https://forms.gle/SaFzBQmB6YwZEht66"
+                                            >Ro’yxatdan o’ting</a
+                                        >
+                                    </button>
+                                    <p class="about-teacher__contact-desc">
+                                        YOKI QO’NG’IROQ QILING
+                                    </p>
+                                    <a
+                                        class="about-teacher__contact-tel"
+                                        href="tel:+998-33-391-19-19">
+                                        +998 (95) 193-31-93
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -571,6 +636,75 @@
                         <h2 class="section-imkoniyatlar__wrapper-title">
                             Nima uchun Arab tili?
                         </h2>
+
+                        <div class="section-imkoniyatlar__none1-container">
+                            <div
+                                class="section-imkoniyatlar__wrapper-container-card-none1">
+                                <p
+                                    class="section-imkoniyatlar__wrapper-container-card-title">
+                                    1
+                                </p>
+                                <h3
+                                    class="section-imkoniyatlar__wrapper-container-card-title2">
+                                    Global til
+                                </h3>
+                                <p
+                                    class="section-imkoniyatlar__wrapper-container-card-text">
+                                    450 milliondan ortiq odam ona tili sifatida
+                                    gapiruvchi zamonaviy biznes va ta'lim tili
+                                </p>
+                            </div>
+                            <div
+                                class="section-imkoniyatlar__wrapper-container-card-none1-2">
+                                <p
+                                    class="section-imkoniyatlar__wrapper-container-card-title">
+                                    2
+                                </p>
+                                <h3
+                                    class="section-imkoniyatlar__wrapper-container-card-title2-2">
+                                    Top tillardan biri
+                                </h3>
+                                <p
+                                    class="section-imkoniyatlar__wrapper-container-card-text2-3">
+                                    Top 5 dunyo tillariga kiruvchi va BMTning 6
+                                    ta rasmiy tilidan biri
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section-imkoniyatlar__none1-container">
+                            <div
+                                class="section-imkoniyatlar__wrapper-container-card-none1-3">
+                                <p
+                                    class="section-imkoniyatlar__wrapper-container-card-title">
+                                    3
+                                </p>
+                                <h3
+                                    class="section-imkoniyatlar__wrapper-container-card-title3-2">
+                                    Islom tili
+                                </h3>
+                                <p
+                                    class="section-imkoniyatlar__wrapper-container-card-text3-3">
+                                    Arab tili Qur'on va Sunnat tili
+                                </p>
+                            </div>
+                            <div
+                                class="section-imkoniyatlar__wrapper-container-card-none1-4">
+                                <p
+                                    class="section-imkoniyatlar__wrapper-container-card-title">
+                                    4
+                                </p>
+                                <h3
+                                    class="section-imkoniyatlar__wrapper-container-card-title4-2">
+                                    Noyob manbalar kaliti
+                                </h3>
+                                <p
+                                    class="section-imkoniyatlar__wrapper-container-card-text4-3">
+                                    Har qanday sohada cheksiz, noyob va asl
+                                    manbalardan foydalanishga yo'l ochib
+                                    beruvchi til
+                                </p>
+                            </div>
+                        </div>
 
                         <div class="section-imkoniyatlar__wrapper-container">
                             <div class="swiper mySwiper">
@@ -693,15 +827,16 @@
                 data-aos-duration="1500">
                 <div class="container">
                     <div class="section-kurs__wrapper">
-                        <h3 class="section-kurs__wrapper-container-title">
-                            Kurs mundarijasi
-                        </h3>
                         <img
                             class="section-kurs__before-img"
                             src="./assets/zo.png"
                             width="297"
                             height="343"
                             alt="resm" />
+                        <h3 class="section-kurs__wrapper-container-title">
+                            Kurs mundarijasi
+                        </h3>
+
                         <div class="section-kurs__wrapper-list">
                             <ul class="tabs">
                                 <li data-tab-target="#home" class="active tab">
@@ -1230,6 +1365,8 @@
                                             </div>
                                         </div>
                                     </div>
+                                           
+                                   
                                 </div>
                                 <div id="pricing" data-tab-content>
                                     <div class="accordion">
@@ -1802,7 +1939,7 @@
                                     data-aos="fade-up"
                                     data-aos-duration="1500">
                                     <a
-                                        href="https://www.youtube.com/watch?v=icuy_hLuMKQ"
+                                        href="https://www.youtube.com/watch?v=Fed6w5jK5vM"
                                         class="player youtube">
                                         <span class="player-overlay">
                                             <svg
@@ -1825,7 +1962,7 @@
                                     data-aos="fade-up"
                                     data-aos-duration="1500">
                                     <a
-                                        href="https://www.youtube.com/watch?v=icuy_hLuMKQ"
+                                        href="https://www.youtube.com/watch?v=Fed6w5jK5vM"
                                         class="player youtube">
                                         <span class="player-overlay">
                                             <svg
@@ -1848,10 +1985,11 @@
                                     data-aos="fade-up"
                                     data-aos-duration="1500">
                                     <a
-                                        href="https://www.youtube.com/watch?v=icuy_hLuMKQ"
+                                        href="https://www.youtube.com/watch?v=Fed6w5jK5vM"
                                         class="player youtube">
                                         <span class="player-overlay">
                                             <svg
+                                                class=""
                                                 width="25"
                                                 height="25"
                                                 viewBox="0 0 69 78"
@@ -1866,11 +2004,34 @@
                                     </a>
                                 </div>
                                 <div
+                                    class="videoq"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1500">
+                                    <a
+                                        href="https://www.youtube.com/watch?v=Fed6w5jK5vM"
+                                        class="player youtube">
+                                        <span class="player-overlay">
+                                            <svg
+                                                class=""
+                                                width="40"
+                                                height="40"
+                                                viewBox="0 0 69 78"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M64.8803 32.8707L11.4718 1.46686C7.13231 -1.08348 0.486595 1.39141 0.486595 7.69934V70.4919C0.486595 76.151 6.66195 79.5615 11.4718 76.7244L64.8803 45.3357C69.6446 42.5439 69.6597 35.6625 64.8803 32.8707Z"
+                                                    fill="#207b3e" />
+                                                <div class="videoq-bac"></div>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div
                                     class="videod"
                                     data-aos="fade-up"
                                     data-aos-duration="1500">
                                     <a
-                                        href="https://www.youtube.com/watch?v=icuy_hLuMKQ"
+                                        href="https://www.youtube.com/watch?v=Fed6w5jK5vM"
                                         class="player youtube">
                                         <span class="player-overlay">
                                             <svg
@@ -1882,7 +2043,7 @@
                                                 <path
                                                     d="M64.8803 32.8707L11.4718 1.46686C7.13231 -1.08348 0.486595 1.39141 0.486595 7.69934V70.4919C0.486595 76.151 6.66195 79.5615 11.4718 76.7244L64.8803 45.3357C69.6446 42.5439 69.6597 35.6625 64.8803 32.8707Z"
                                                     fill="#207b3e" />
-                                                <div class="videoc-bac"></div>
+                                                <div class="videod-bac"></div>
                                             </svg>
 
                                             <div class="videod-bac"></div>
@@ -1896,7 +2057,7 @@
                                     data-aos="fade-up"
                                     data-aos-duration="1500">
                                     <a
-                                        href="https://www.youtube.com/watch?v=icuy_hLuMKQ"
+                                        href="https://www.youtube.com/watch?v=Fed6w5jK5vM"
                                         class="player youtube">
                                         <span class="player-overlay">
                                             <svg
@@ -1935,12 +2096,22 @@
         <script src="./js/main.js"></script>
         <script>
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 4,
+                slidesPerView: 5,
                 spaceBetween: 30,
                 freeMode: true,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
+                },
+                breakpoints: {
+                    1500: {
+                        slidesPerView: 5.5,
+                        spaceBetween: 30,
+                    },
+                    1360: {
+                        slidesPerView: 4.4,
+                        spaceBetween: 30,
+                    },
                 },
             });
         </script>
