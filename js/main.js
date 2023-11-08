@@ -11,6 +11,7 @@ $(document).ready(function () {
 
 AOS.init({
     once: true,
+    disable: "mobile",
 });
 
 const accordion = document.getElementsByClassName("contentBx");
@@ -37,5 +38,3 @@ tabs.forEach((tab) => {
         target.classList.add("active");
     });
 });
-
-
